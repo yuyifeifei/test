@@ -25,7 +25,7 @@ export default {
     getarticles: function(){
       this.$axios.get('/api/articles?type=more&category=home&shown_offset=1524276761019196&first_view=false')
       .then(res => {
-          //console.log(res)
+           console.log(res)
            console.log(this.articles[0])
            console.log(res.status)
          if(res.status === 200){
